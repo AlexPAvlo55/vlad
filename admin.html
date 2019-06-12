@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Title</title>
+	<meta name="description" content="Создание адаптивного сайта" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap-grid-3.3.1.min.css" />
+	<link rel="stylesheet" href="js/lib/owl-carousel/assets/owl.carousel.css" />
+	<link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css" />	
+    <link rel="stylesheet" href="js/lib/jquery.fancybox/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="js/lib/jQueryFormStyler-master/jquery.formstyler.css" />
+	<link rel="stylesheet" href="js/lib/owl-carousel/assets/owl.carousel.css">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.css" />
+	<link rel="stylesheet" href="css/font/font.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/media.css" />
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/lib/jquery/jquery-1.11.1.min.js"></script>
+	<script src="js/lib/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+    <script src="js/lib/jquery.fancybox/jquery.fancybox.min.js"></script> 
+	<script src="js/lib/owl-carousel/owl.carousel.js"></script>	
+</head>
+<body>
+<div class="wrapper">
+
+	<header class="header">
+		<div class="container">
+			<div class="top_head">
+				<a class="logo" href="#"><img src="img/logo.png"></a>
+				<div class="head_catalog">
+					<a href="#"><i class="fa fa-bars"></i>Каталог</a>
+				</div>
+				<div class="head_phone">
+					<i class="fa fa-phone-square"></i>
+					<a href="#">+38095-38-53-11</a><br>
+					<a href="#">+38099-41-86-14</a>
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="#">О нас</a></li>
+					</ul>
+				</div>
+				<div class="recall">
+					<a href="#"><i class="fa fa-phone"></i></a>
+				</div>	
+				<div class="auth">
+					<a href="#login" class="fancybox_popup login">Вход</a>
+					<a href="#checkin" class="fancybox_popup checkin">Регистрация</a>
+				</div>
+				<div class="basket">
+					<a href="#"><i class="fa fa-shopping-basket"></i></a>
+				</div>
+			</div>
+		</div>
+	</header><!-- .header-->
+
+	<main class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="sidebar">
+						<ul>
+							<li><a href="#">Категории</a>
+								<ul>
+									<li><a href="#">создать</a></li>
+									<li><a href="#">обновить</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Книги</a>
+								<ul>
+									<li><a href="#">список</a></li>
+									<li><a href="#">создать</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="comment modal_form ">
+						<h2>Добавить книгу</h2>
+						<form>
+							<div class="row">
+							<div class="col-sm-6">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+							<input type="text" name="namne" placeholder="Название">
+							<input type="email" name="email" placeholder="Автор">
+							<textarea placeholder="Описание"></textarea>
+							</div>
+							<div class="col-sm-6">
+								<input type="file" name="">
+							</div></div>
+							<div class="row">
+							<div class="col-sm-4">
+								<input type="file" name="">
+							</div>
+							<div class="col-sm-4">
+								<input type="file" name="">
+							</div>
+							<div class="col-sm-4">
+								<input type="file" name="">
+							</div>
+							</div>
+							<div class="row">
+							<div class="col-sm-6">								
+							<button type="submit" name="submit" class="btn">Отмена</button>
+							</div>
+							<div class="col-sm-6">								
+							<button type="submit" name="submit" class="btn">Добавить</button>
+							</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main><!-- .content -->
+
+</div><!-- .wrapper -->
+
+<footer class="footer">
+	<div class="container">
+		<a class="logo" href="#"><img src="img/logo.png"></a>
+		<a href="#download" class="fancybox_popup btn">Скачать приложение</a>
+	</div>
+</footer><!-- .footer -->
+<div id="login" style="display:none;" class="modal_form_wrapp">
+	<div class="modal_form">
+		<div class="modal_top"><img src="img/logo.png"></div>
+		<div class="title">
+			Вход
+		</div>
+		<div class="form">
+			<form action="">
+				<input type="text" placeholder="E-mail">
+				<input type="password" placeholder="Пароль">
+				<button class="btn">Вход</button>
+			</form>
+		</div>
+	</div>
+</div>
+<div id="download" style="display:none;" class="modal_form_wrapp">
+	<div class="modal_form">
+		<div class="modal_top"><img src="img/logo.png"></div>
+		<div class="title">
+			Скачать приложение
+		</div>
+		<div class="form">
+			<a href="#">Скачать</a>
+		</div>
+	</div>
+</div>
+<div id="checkin" style="display:none;" class="modal_form_wrapp">
+	<div class="modal_form">
+		<div class="modal_top"><img src="img/logo.png"></div>
+		<div class="title">
+			Регистрация
+		</div>
+		<div class="form">
+			<form action="">
+				<input type="text" placeholder="Имя">
+				<input type="text" placeholder="Телефон">
+				<input type="text" placeholder="E-mail">
+				<input type="password" placeholder="Пароль">
+				<button class="btn">Зарегистрироваться</button>
+			</form>
+		</div>
+	</div>
+</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
